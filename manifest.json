@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "edition": {
+    "id": "WYC",
+    "abbrev": "WYC",
+    "name": "Wycliffe Bible (portions)",
+    "language": "eng",
+    "direction": "ltr",
+    "is_original": 0,
+    "has_strongs": 0,
+    "license": "Public Domain",
+    "attribution": "Wycliffe Bible (c. 1395), surviving portions. Public Domain (eBible.org).",
+    "sort_order": 9
+  },
+  "books": [
+    "Gen",
+    "Exod",
+    "Lev",
+    "Num",
+    "Deut",
+    "Matt",
+    "Mark",
+    "Luke",
+    "John"
+  ],
+  "migration": "302bb5f92f1e05bf4b96c894f96da77a4cf10845",
+  "inputs": [
+    {
+      "asset": "helloao_eng_w88.json",
+      "sha256": "1637855702328d1510ef26e313aadc7dc7782c8fa2df9df1bda6f569d87a3435",
+      "url": "https://bible.helloao.org/api/eng_w88/complete.json",
+      "license": "Public Domain",
+      "credit": "Wycliffe Bible (c. 1395), surviving portions. Public Domain (eBible.org)."
+    }
+  ],
+  "layers": {
+    "text": [
+      "chapter",
+      "verse",
+      "text"
+    ],
+    "layout": [
+      "chapter",
+      "verse",
+      "marks"
+    ],
+    "tokens": [
+      "chapter",
+      "verse",
+      "position",
+      "surface",
+      "trailer",
+      "strongs",
+      "lemma",
+      "translit",
+      "morph",
+      "gloss"
+    ],
+    "inferred": [
+      "chapter",
+      "verse",
+      "strongs"
+    ],
+    "alignments": [
+      "chapter",
+      "verse",
+      "start_position",
+      "end_position",
+      "bsb_position",
+      "source_row",
+      "language",
+      "english",
+      "form",
+      "translit",
+      "strongs",
+      "morph",
+      "standalone",
+      "unique_form"
+    ]
+  },
+  "inference": "BSB phrase alignment with KJV and BSB verse candidates, Strong’s KJV usage and English stems. Passage addresses mapped to KJV coordinates before lookup. Inferred links support dictionary lookup only. Regenerator: data-pipeline/editionInference.ts.",
+  "files": {
+    "coverage.json": "4551a1d90ec68669dd142fb7585b97dc74cd152064ea35ec7e34688bb378ce79",
+    "inferred/Deut.jsonl": "5f02988698d8cf502c20b438d8cd417ace71e5a0417afa5768f8084562a0d012",
+    "inferred/Exod.jsonl": "1d7961a5701169ba4dee4e12b01cf31be803ada0394c0cdbe04e974516723e94",
+    "inferred/Gen.jsonl": "e7a760f743e5034f447e0e228acd4b5a98dc30cf2393147dfaec2a3ba605bce7",
+    "inferred/John.jsonl": "4ea13ede1e63eecdc72b564643c5d71dce78d3aaf4d89d13e2e01ba3a37b6c2f",
+    "inferred/Lev.jsonl": "3685c1639056f0419efc39257f64b8083a4d10ee05de2c4b270d9a02c0ad7a0d",
+    "inferred/Luke.jsonl": "ad408be0309c9530bcebfd9dc3aa0cf7dba9f96c4e3f1a6ab2166320d961d684",
+    "inferred/Mark.jsonl": "918b0935ec4bdf09bc2dc31f0f55d42a8bde679abae283886741422307d3b82e",
+    "inferred/Matt.jsonl": "be7120bae098280928d2d674aa377d70a551290bd93a4f3398e01ac2f25779a0",
+    "inferred/Num.jsonl": "dbbecfcc728ae4aade62a27817e39aeb948a1d1022c0aa610106e9499fd5c158",
+    "inventory.json": "2e5eb35c0a83b4842814f0b7cd9381b85347235afdc6d3c24ba08ce53a00f6c4",
+    "layout/Deut.jsonl": "3b4a5dee3e0085fcb592856c24e66b86370e364438bcf8fb0df9f5accda523f4",
+    "layout/Exod.jsonl": "0a5b9c684271c5bb94acfc8f575bf51ef168ac0d00ca2fd38a44ff9fbf5898fe",
+    "layout/Gen.jsonl": "ec0f426e7898f74d4ef6e56324f78358121b5e6faa55a7639f2c71001de7f79b",
+    "layout/John.jsonl": "cad06aa4de1a7360513d48a5d41e981321f1b3a2f4323553581b7e4b07d2e98c",
+    "layout/Lev.jsonl": "806ec23f0dfd704c37534f9091c35a78bad285e28a340036012ac74e5eb52833",
+    "layout/Luke.jsonl": "6dd22b39c8a061fab517d18be1b5690e42fb18abd72293d6acf0b299043a8326",
+    "layout/Mark.jsonl": "8a22b41149533dedcb60f506ae60f6ae7c82943b134e5168f71eacdbe7138b78",
+    "layout/Matt.jsonl": "9297c40b66fee14a100f64bef2a4b78e3ec9b86ac829840e7272b015d7623210",
+    "layout/Num.jsonl": "fb7a2570fdde0822fffedb146310533f221a0fe6bd697d8dab387f0a7f459f83",
+    "sources/helloao_eng_w88.json.gz": "4b7d613e7321ab6d69363003be6b7fddfa376f10a1d836e34d1a31996f47fa8c",
+    "text/Deut.jsonl": "144a4a4965a7363779cbc7a8b0a1f1c56d4e982408fdccf0c4f4615bbe3b2354",
+    "text/Exod.jsonl": "b43e291596d1492cf5120689460beaf39063596ff9b6d6dd950eff48f63b4bfa",
+    "text/Gen.jsonl": "dc86b11d78fa4e4b4f494ace31034b89c9047ad8d16b62b4eacd14afe47415b8",
+    "text/John.jsonl": "9d85fd2767f19dbf8625397898cf6a5fdaa36da9d4b50d975de5613328775d10",
+    "text/Lev.jsonl": "c8ae26595f2734a77989ba15ada5f85dfe172d3db9394b819fd06a2d734b6483",
+    "text/Luke.jsonl": "1550f69942faea9bdfe2dfb2e4a92b7fcf5d282e308181f4ee3d5c881fe3aee0",
+    "text/Mark.jsonl": "b2136f20d20fb325dbcc50d780621e5a8faaa97e9ec12a7fd50cc42e00432200",
+    "text/Matt.jsonl": "bbb633ced0e32bf80616b4f3e8ca691ef7750ee92ee602c3c108c69cb13e7bca",
+    "text/Num.jsonl": "83302ae6442fce6daaabbcbaa9a163680dea6268b4718f7a977b8e0345077379"
+  }
+}

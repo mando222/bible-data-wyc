@@ -1,0 +1,13 @@
+{
+  "edition": "WYC",
+  "migration": "302bb5f92f1e05bf4b96c894f96da77a4cf10845",
+  "sources": [
+    {
+      "asset": "helloao_eng_w88.json",
+      "sha256": "1637855702328d1510ef26e313aadc7dc7782c8fa2df9df1bda6f569d87a3435",
+      "url": "https://bible.helloao.org/api/eng_w88/complete.json",
+      "license": "Public Domain",
+      "credit": "Wycliffe Bible (c. 1395), surviving portions. Public Domain (eBible.org)."
+    }
+  ]
+}
