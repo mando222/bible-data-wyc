@@ -1,13 +1,94 @@
 {
   "edition": "WYC",
-  "migration": "302bb5f92f1e05bf4b96c894f96da77a4cf10845",
-  "sources": [
+  "format": 1,
+  "candidates": [
     {
-      "asset": "helloao_eng_w88.json",
-      "sha256": "1637855702328d1510ef26e313aadc7dc7782c8fa2df9df1bda6f569d87a3435",
+      "name": "Free Use Bible API edition snapshot",
       "url": "https://bible.helloao.org/api/eng_w88/complete.json",
-      "license": "Public Domain",
-      "credit": "Wycliffe Bible (c. 1395), surviving portions. Public Domain (eBible.org)."
+      "sha256": "1637855702328d1510ef26e313aadc7dc7782c8fa2df9df1bda6f569d87a3435",
+      "rights": "Public-domain edition text. Preserve publisher credits and applicable territorial notices.",
+      "establishes": "The pinned v0.5.0 published text and its edition-specific layout."
+    },
+    {
+      "name": "eBible.org USFM",
+      "url": "https://ebible.org/Scriptures/engWycliffe_usfm.zip",
+      "catalog": "https://ebible.org/details.php?id=engWycliffe",
+      "sha256": "8702afe48f1f3e0527107d23f938ecd7fbfcbe0e55ceaf386f129bd279a5b4d9",
+      "books": [
+        "DEU",
+        "EXO",
+        "GEN",
+        "JHN",
+        "LEV",
+        "LUK",
+        "MAT",
+        "MRK",
+        "NUM"
+      ],
+      "rights": "Wycliffe Bible ^ < > Wycliffe Bible Wycliffe Bible This is the Pentateuch and Gospels from The Holy Bible, containing the Old and New Testaments, with the apocryphal books, in the earliest English version made from the latin Vulgate by John Wycliffe and his followers. c.1395 Public Domain Language: Middle English (English) Dialect: Middle Translation by: John Wycliffe 2016-11-08 HTML generated with Haiola by eBible.org 30 Oct 2026 from source files dated 12 Dec 2025 ^ < > Public Domain",
+      "establishes": "Edition-specific markup and any word-level tags as supplied by the distributor. An archive hash identifies the precise snapshot. See upstream/ for the unchanged source and embedded rights notice."
+    },
+    {
+      "name": "CrossWire SWORD catalog, Wycliffe",
+      "url": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Wycliffe",
+      "revision": "2.4.1",
+      "rights": "Creative Commons BY-SA 4.0.",
+      "establishes": "A larger Wikisource-derived corpus with different numbering and modern transcription choices. Historical verse divisions are retrospective. No source-word indices are documented."
     }
-  ]
+  ],
+  "gaps": "This late Wycliffite text covers the Pentateuch and four Gospels. Its immediate source is the Latin Vulgate. Hebrew or Greek words from a parallel edition cannot establish its immediate source form.",
+  "books": {
+    "Gen": {
+      "targetVerses": 1530,
+      "distributorVerseUnits": 1530,
+      "distributorWordTags": 0
+    },
+    "Exod": {
+      "targetVerses": 1210,
+      "distributorVerseUnits": 1210,
+      "distributorWordTags": 0
+    },
+    "Lev": {
+      "targetVerses": 858,
+      "distributorVerseUnits": 858,
+      "distributorWordTags": 0
+    },
+    "Num": {
+      "targetVerses": 1286,
+      "distributorVerseUnits": 1286,
+      "distributorWordTags": 0
+    },
+    "Deut": {
+      "targetVerses": 959,
+      "distributorVerseUnits": 959,
+      "distributorWordTags": 0
+    },
+    "Matt": {
+      "targetVerses": 1071,
+      "distributorVerseUnits": 1071,
+      "distributorWordTags": 0
+    },
+    "Mark": {
+      "targetVerses": 678,
+      "distributorVerseUnits": 678,
+      "distributorWordTags": 0
+    },
+    "Luke": {
+      "targetVerses": 1151,
+      "distributorVerseUnits": 1151,
+      "distributorWordTags": 0
+    },
+    "John": {
+      "targetVerses": 879,
+      "distributorVerseUnits": 879,
+      "distributorWordTags": 0
+    }
+  },
+  "migration": "302bb5f92f1e05bf4b96c894f96da77a4cf10845",
+  "method": {
+    "published": "A distributor Strong’s tag on a matching whole English verse is independently supported by a complete BSB publisher rendering of the same single word and a unique same Strong’s occurrence in the selected source verse. These flags are for lexical lookup.",
+    "corroborated": "The WEB and ASV John 11:35 readings are independently reviewed. CrossWire KJV2003 directly identifies individual source word positions. Additions require matching English boundaries and matching Greek form, ID and position. See the build script for abstentions.",
+    "withheld": "The raw provider archive retains every candidate. Book counts record the reason a candidate was withheld. The original translation is preserved; a supported lexical lookup does not enable source-form display.",
+    "publishedText": "The anchored translation and literary layout are preserved from the pinned migration reference. Later distributor text revisions never silently replace a published verse."
+  }
 }
